@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro to Javascript</title>
+  </head>
+  <body>
+    <header>
+      <h1>Javascript is awesome!</h1>
+    </header>
+    <script src="./example.js"></script>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Datatype</title>
+    <!-- <script>
+        console.log("My Console statement!!")
+    </script> -->
+  </head>
+  <body>
+    <header>
+      <h1>Javascript is awesome!</h1>
+    </header>
+    <!-- <script>
+        console.log("My Console statement!!")
+    </script> -->
+    <script src="./example15.js"></script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Datatype</title>
+    <!-- <script>
+        console.log("My Console statement!!")
+    </script> -->
+  </head>
+  <body>
+    <header>
+      <h1>Javascript is awesome!</h1>
+    </header>
+    <!-- <script>
+        console.log("My Console statement!!")
+    </script> -->
+    <script src="./example16.js"></script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Datatype</title>
+    <!-- <script>
+        console.log("My Console statement!!")
+    </script> -->
+  </head>
+  <body>
+    <header>
+      <h1>Javascript is awesome!</h1>
+    </header>
+    <!-- <script>
+        console.log("My Console statement!!")
+    </script> -->
+    <script src="./example17.js"></script>
+  </body>
+</html>
+console.log("My console statement!!");
+
+// Syntax and Declaration
+
+var score = 10; // ES5 (Before ES6)
+
+let result = 50; //This is a part of ES6 - Ecmascript
+const PI = 3.14; //ES6
+console.log(score);
+console.log(result);
+console.log(PI);
+
+score = 15;
+console.log(score);
+result = 55;
+console.log(result);
+
+// PI = 3.26;
+// console.log(PI);
+// TypeError: Assignment to constant variable.
+
+/** Datatypes
+ * 1. Number
+ * 2. Strings
+ * 3. Boolean
+ * 4. Null
+ * 5. Undefined
+ * 6. Objects
+ * 7. Symbols (es6)
+ *
+ * Loosely Typed Language
+ */
+
+score = 10;
+result = "10";
+
+console.log(score, result);
+
+// BEDMAS(Bracket Exponent Division Multiplication Addition Substraction)
+let finalScore = score + result; //Concatenating
+console.log(finalScore);
+let penalty = score - result; //Mathematical
+console.log(penalty);
+let totalgames = 5;
+let avgscore = finalScore / totalgames;
+console.log(avgscore);
+// typeof
+
+console.log(typeof finalScore);
+console.log(typeof penalty);
+console.log(typeof avgscore);
+
+totalgames = "5";
+avgscore = finalScore / totalgames;
+console.log(avgscore);
+
+let value = (finalScore ** 20 * 10) / (penalty + totalgames);
+console.log(value);
+
+totalgames = "five";
+value = (finalScore ** 20 * 10) / (penalty + totalgames);
+value = penalty + totalgames; //Relates to maths but does not makes sense
+console.log(value); //NaN(Not a Number)
+console.log(typeof value); //number
+console.log(penalty * totalgames); //NaN
+
+//  Strings  (String and string)
+
+
+
+// console.log(typeof "it,s raining!!");
+
+
+// let number = "10"
+
+// console.log(number.toUpperCase());
+
+// let word = "raining";  // String.prototype
+
+// let string = "String as a name" // error
+// let let = "String as a name" // error
+
+// let String = 2000;
+
+
+
+// console.log(word.toUpperCase());
+
+
+// console.log(let);
+// console.log(string);
+// console.log(String);
+
+
+// console.log('hello and good evening'.length)
+// console.log("hello".charAt(4));
+
+
+
+// Boolean  (true = 1 , false = 0)
+
+// console.log(typeof 1);
+
+
+// console.log(typeof true);
+// console.log(typeof false);
+
+// // console.log(typeof 'five'.isNaN());   // not used
+// console.log(typeof isNaN('five'));
+
+
+
+
+//  Truthy Values: any value except 0 and false
+// if(1){
+//     console.log("Very true!!")
+// }else{
+//     console.log("Very wrong!!")
+// }
+
+
+
+
+// if('hello'){
+//     console.log("Very true!!")
+// }else{
+//     console.log("Very wrong!!")
+// }
+
+
+
+// Falsy Values: 0 false '' NaN undefined null
+
+// if(0){
+//     console.log("Very true!!")
+// }else{
+//     console.log("Very wrong!!")
+// }
+
+
+
+
+// if(''){
+//     console.log("Very true!!")
+// }else{
+//     console.log("Very wrong!!")
+// }
+
+
+
+// let condition = 10/'hello';  // NaN
+// if(cond){
+//     console.log("Very true!!")
+// }else{
+//     console.log("Very wrong!!")
+// }
+
+// console.log('hello'.includes('e'));
+
+
+
+// Null Undefined
+
+// let score;
+// let result = null;
+
+    // if(score){
+    //     console.log("Very true!!")
+    // }else{
+    //     console.log("Very wrong!!")
+    // } //very wrong
+
+    // if(result){
+    //     console.log("Very true!!")
+    // }else{
+    //     console.log("Very wrong!!")
+    // }  // very wrong
+
+// let score;
+// let result = null;
+// // let status = null;
+
+
+//     if(result){
+//         console.log("Very true!!")
+//     }else{
+//         console.log("Very wrong!!")
+//     }
+
+// console.log(typeof score);
+// console.log(typeof result);
+
+// objects
+
+let obj = { name: "Cipher" };
+// console.log(obj);
+
+// person['country'] = 'India'   //  x  x  x  Wrong
+
+let person = {
+    name: 'John',
+    email: 'john@wich.com',
+    age: 45,
+    status: true,
+    children: {
+        name: 'Jay'
+    },
+    hobbies: ['Reading', 'Writing', true, 100, null]  //  Array
+}
+
+// let clickedName= 'age';
+// let clickedName= 'name';
+
+// let dynamicPropValue = 'age'
+
+// console.log(person[clickedName]);   //  !=== person.clickedName
+// console.log(person);
+
+// console.log(typeof person);
+
+// console.log(person.name);
+// console.log(typeof person.name);
+// console.log(person['age']);      // === person.age
+// console.log(person[children]);
+// console.log(person.clickedName);
+// console.log(person[dynamicPropValue]);
+// console.log(person.dynamicPropValue);
+
+
+// person.country = 'India'; 
+// console.log(person);
+
+// console.log(person);
+// console.log(year);
+
+let year = 2020
+
+console.log(year);
+console.log(person);
+person['country'] = 'India'
+
+// console.log(person);
+// console.log(person.hobbies);
+// console.log(null);
+
+
+
+
+
+/**
+ * Primitive Data 
+ * Number 
+ * String
+ * Boolean
+ * Undefined 
+ */
+
+/**
+ * Referene Datatype
+ * Object
+ * Arrays
+ * Function
+ */
+ 
+ // Functions
+
+// ES5  - Functionally scoped  (var)
+// ES6  - Block Scoped (Let const)
+
+// var abc = 10;
+
+// function testing(){
+//     var abc = 20;
+//     let def = 100;
+//     let xyz = "block scoped";
+//     console.log(abc)
+//     Block Scope
+//     if(1){  //(0)  not defined
+//         let xyz = "block scoped";
+//         var xyz = "block scoped";
+//         console.log('Inside It',xyz);
+//         console.log(abc);
+//     }
+//     console.log('Outside It',xyz);
+// }
+
+// testing();   // calling a function
+// console.log(abc);
+
+// for(condtion){
+//  block let
+//  var
+// }
+
+// var name = 'Cipher';
+// let year = 2020  // Global Scope
+
+// function test(){
+//     console.log(name);
+//     console.log(year);
+// }
+
+// test();
+
+// Function Declaration and Function Expression
+
+// Hoisting
+// myFunc()
+// myFunc2()
+
+// function myFunc(){
+//     console.log('Inside myFunc Declaration')
+// }
+
+// Function Expression
+// let myFunc2 = function(){
+//     console.log('Inside myFunc2:  function expression')
+// }
+
+// myFunc()
+// myFunc2();
+
+// console.log(name2)
+// console.log(name())
+// name();
+
+// var name2 = 'Deku';
+// let nam = 'Izuku';
+// var name = function(){
+// function name(){
+// console.log('hello')
+// }
+
+// Arrow Function - ES6
+// this - context
+
+// let newFunc = () => {
+//     console.log('Arrow Function Created');
+//     console.log(this);
+// }
+
+// newFunc();
+
+// // let funcExp = function(){
+// function funcExp(){
+//     console.log(' Function expression Creation ');
+//     console.log(this);
+// }
+
+// funcExp();
+
+// let newFunc = () => console.log('Arrow');
+// let newFunc = () => {
+//     console.log('Arrow');
+//     console.log('2nd statement');
+
+// };
+// newFunc();
+
+// let newFunc = (name, context) => {  // Parameter
+//     console.log('Arrow', context)
+//     console.log(name);
+// };
+// newFunc('Cipher', this);         // Argument
+
+let newFunc = (name) => console.log(name); // Arrow
+
+newFunc("Cipher", this); // Argument
